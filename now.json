@@ -1,0 +1,14 @@
+{
+  "name": "CMS User Service",
+  "version": 2,
+  "env": {
+    "GOOGLE_APPLICATION_CREDENTIALS": "@firebaseserviceaccount"
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "headers": { "access-control-allow-origin": "*" },
+      "dest": "/api/$1.js"
+    }
+  ]
+}
