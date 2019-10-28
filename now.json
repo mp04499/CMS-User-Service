@@ -2,7 +2,8 @@
   "name": "CMS User Service",
   "version": 2,
   "env": {
-    "GOOGLE_APPLICATION_CREDENTIALS": "@firebaseserviceaccount"
+    "GOOGLE_APPLICATION_CREDENTIALS": "@firebaseserviceaccount",
+    "DATABASE_URL": "@databaseurl"
   },
   "routes": [
     {

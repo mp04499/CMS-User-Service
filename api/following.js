@@ -7,7 +7,7 @@ const buff = new Buffer.from(
 const sa = buff.toString();
 admin.initializeApp({
   credential: admin.credential.cert(JSON.parse(sa)),
-  databaseURL: 'https://mike-cms.firebaseio.com',
+  databaseURL: process.env.DATABASE_URL,
 });
 
 const db = admin.firestore();
