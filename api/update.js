@@ -16,8 +16,12 @@ module.exports = async (req, res) => {
   if (req.method === 'PUT') {
     const { uid, ...rest } = req.body;
 
-    await auth.updateUser(uid, { ...rest });
+    await auth.updateUser(uid, rest);
 
-    res.status(200).send('Account Updated');
+    return res.status(200).send('User Update Complete');
   }
+
+  if (req.method === 'OPTIONS') return res.status(200).end();
+
+  return res.status(400).send('Method Not Supported');
 };

@@ -7,7 +7,17 @@
   "routes": [
     {
       "src": "/(.*)",
-      "headers": { "access-control-allow-origin": "*" },
+      "headers": {
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "PUT",
+        "access-control-allow-headers": "content-type"
+      },
+      "methods": [
+        "PUT",
+        "OPTIONS",
+        "POST",
+        "GET"
+      ],
       "dest": "/api/$1.js"
     }
   ]
