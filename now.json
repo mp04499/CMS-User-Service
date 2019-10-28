@@ -3,7 +3,7 @@
   "version": 2,
   "env": {
     "GOOGLE_APPLICATION_CREDENTIALS": "@firebaseserviceaccount",
-    "DATABASE_URL": "@databaseurl"
+    "DATABASE_URL": "@firebasedatabaseurl"
   },
   "routes": [
     {
