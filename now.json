@@ -19,7 +19,7 @@
         "POST",
         "GET"
       ],
-      "dest": "/api/$1.js"
+      "dest": "/api/$1.ts"
     }
   ]
 }

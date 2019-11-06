@@ -10,11 +10,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "firebase-admin": "^8.6.1"
+    "firebase-admin": "^8.6.1",
+    "@now/node": "^1.0.2"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.6.1",
+    "@typescript-eslint/parser": "^2.6.1",
     "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2"
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.18.2",
+    "typescript": "^3.7.2"
   }
 }
